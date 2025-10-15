@@ -33,7 +33,7 @@ pipeline {
             steps {
                 echo "🚀 Running Docker container..."
                 sh '''
-                    docker run -d --name ${CONTAINER_NAME} -p 3000:80${IMAGE_NAME}:latest
+                    docker run -d --name ${CONTAINER_NAME} -p 3000:80 ${IMAGE_NAME}:latest
                 '''
             }
         }
