@@ -37,7 +37,7 @@ cd spotify-clone
    docker-compose up --build
    ```
 
-   - Access the application at `http://localhost:8080`.
+   - Access the application at `http://localhost:3000`.
 
 ## 🧪 Testing
 
@@ -63,11 +63,11 @@ For deployment on a server:
 2. **Run the Docker Container**:
 
    ```bash
-   docker run -d -p 8080:80 spotify-clone
+   docker run -d -p 3000:80 spotify-clone
    ```
 
 3. **Access the Application**:
-   - Navigate to `http://your-server-ip:8080` in a web browser.
+   - Navigate to `http://your-server-ip:3000` in a web browser.
 
 ## ⚙️ Configuration
 
