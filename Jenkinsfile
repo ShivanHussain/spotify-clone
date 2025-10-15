@@ -47,16 +47,6 @@ pipeline {
                 '''
             }
         }
-
-        stage('Cleanup') {
-            steps {
-                echo "🧹 Cleaning up old Docker containers..."
-                sh '''
-                    docker stop ${CONTAINER_NAME} || true
-                    docker rm ${CONTAINER_NAME} || true
-                '''
-            }
-        }
     }
 
     post {
