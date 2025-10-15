@@ -25,3 +25,51 @@ git clone https://github.com/ShivanHussain/spotify-clone.git
 cd spotify-clone
 ```
 
+### Run Locally
+
+1. **Without Docker**:
+   - Open `index.html` in your preferred web browser.
+
+2. **With Docker**:
+   - Build and run the Docker container:
+
+   ```bash
+   docker-compose up --build
+   ```
+
+   - Access the application at `http://localhost:8080`.
+
+## 🧪 Testing
+
+To ensure the application functions correctly:
+
+1. **Manual Testing**:
+   - Open the application in a browser.
+   - Verify that all UI components are responsive and interactive.
+
+2. **Automated Testing** (if applicable):
+   - Implement JavaScript testing using frameworks like Jest or Mocha.
+
+## 🚢 Deployment
+
+For deployment on a server:
+
+1. **Build the Docker Image**:
+
+   ```bash
+   docker build -t spotify-clone .
+   ```
+
+2. **Run the Docker Container**:
+
+   ```bash
+   docker run -d -p 8080:80 spotify-clone
+   ```
+
+3. **Access the Application**:
+   - Navigate to `http://your-server-ip:8080` in a web browser.
+
+## ⚙️ Configuration
+
+- **Dockerfile**: Defines the environment and build steps for the application.
+- **docker-compose.yml**: Simplifies the process of building and running the Docker container.
