@@ -1,0 +1,9 @@
+services:
+  spotify-clone:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: spotify-clone:latest
+    ports:
+      - "3000:80"
+    restart: always
